@@ -1,0 +1,3 @@
+[submodule "TensorSnake"]
+	path = TensorSnake
+	url = git@github.com:eliasffyksen/TensorSnake
