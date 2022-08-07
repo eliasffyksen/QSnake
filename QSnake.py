@@ -1,4 +1,5 @@
 from statistics import mean
+from this import d
 import torch as t
 import torch.nn as nn
 import sys
@@ -125,7 +126,7 @@ if __name__ == '__main__':
   x = None
   def setup():
     global x, batch_size
-    x = t.randn((batch_size, 8, 8))
+    x = t.randn((batch_size, 8, 8), device=device)
 
   number=100
   time = mean(timeit.repeat(
